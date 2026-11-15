@@ -1,0 +1,2 @@
+# 脚本一律用 LF 存： 混进 bash 脚本会让它在 Git Bash 里直接报错
+*.sh text eol=lf
