@@ -1,0 +1,43 @@
+# 内容与素材：由使用者从原版 APK 自行导出，不入库。
+# 生成方式见 README「准备内容与素材」一节。
+public/
+
+# .NET 构建产物
+bin/
+obj/
+
+# Godot 编辑器与构建缓存（.uid 是资源标识，随源码入库）
+godot/.godot/
+
+# Android 导出时临时从 public/ 复制进来的内容与素材（198MB，不入库）
+godot/assets/
+godot/content/
+godot/build/
+
+# 导出用的内容包（public/ 打成的 zip，225MB，由 godot/tools/pack_game_data.py 生成）
+godot/game_data.zip
+godot/*.sln.DotSettings.user
+
+# Godot Android 导出的 Gradle 构建目录（含导出前复制的 content/assets 副本，1.2GB）
+godot/android/
+
+# 原包逆向的数据快照（可由 inotia4/tools/re_*.py 重新生成，1.1MB）
+inotia4/data/
+
+# 原包的 APK 解包目录（69.5MB / 2087 个文件）。它和同目录的两个 .apk 是同一份
+# 东西的两态，用 inotia4/tools 里的脚本可原样解出，不入库。
+# 同目录的 艾诺迪亚4_1.2.9_cat.apk / _cat_final.apk 由下面的 *.apk 规则忽略。
+inotia4/_apk/
+*.apk
+
+# APK 签名私钥。从不入库（保留可重签能力，丢了由 inotia4/tools/repack_apk.py 的
+# keytool -genkeypair 分支重新生成，只是签名指纹会变）。
+inotia4/mod.keystore
+
+# smali/baksmali 是上游公开发行物，不是本项目产物，自行下载：
+#   https://github.com/baksmali/smali/releases  v2.5.2
+#   下载 baksmali-2.5.2.jar / smali-2.5.2.jar，改名为 inotia4/tools/baksmali.jar、smali.jar
+# 依赖它们的脚本：inject_marks2.py 等（先 baksmali d classes.dex -o smali_out）
+inotia4/tools/*.jar
+
+__pycache__/

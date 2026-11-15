@@ -1,0 +1,2205 @@
+{
+ "effects": {
+  "soul-sword": [
+   "soul-sword",
+   "soul-sword-magic"
+  ],
+  "blood-sword": [
+   "life-drain"
+  ],
+  "shield-of-rage": [],
+  "flares-of-pain": [],
+  "wrath-of-darkness": [],
+  "dark-sense": [],
+  "flare": [
+   "smoke-puff"
+  ],
+  "deep-breath": [],
+  "mage-s-claw": [
+   "mana-recovery"
+  ],
+  "blood-revenge": [],
+  "bard-of-destruction": [],
+  "lightning-of-hell": [],
+  "ordination-prayer": [],
+  "magic-insight": [],
+  "shield-of-trust": [],
+  "god-of-justice": [],
+  "clever-fellow": [],
+  "disturbance": [],
+  "sniping": [],
+  "armor-penetration": [
+   "armor-break-impact"
+  ],
+  "blood-thirst": [
+   "life-drain",
+   "mana-recovery"
+  ],
+  "revenge-incarnate": []
+ },
+ "learned": [
+  {
+   "classId": "dark-knight",
+   "skills": [
+    "dark-strike",
+    "phantom-clash",
+    "curse-of-screams",
+    "shield-bash",
+    "firestorm",
+    "sword-of-hell",
+    "demon-s-shield",
+    "guardian-of-darkness",
+    "molten-armor",
+    "improved-defense",
+    "soul-sword",
+    "blood-sword",
+    "shield-of-rage",
+    "flares-of-pain",
+    "wrath-of-darkness"
+   ],
+   "kinds": [
+    "soul-sword",
+    "blood-sword",
+    "shield-of-rage",
+    "flares-of-pain",
+    "wrath-of-darkness"
+   ]
+  },
+  {
+   "classId": "assassin",
+   "skills": [
+    "continuous-slash",
+    "spiritual-blade",
+    "poison-touch",
+    "assassin-s-sword",
+    "dark-attack",
+    "freeze-extreme",
+    "whist",
+    "blade-deflection",
+    "energy-bodhi",
+    "twin-blade",
+    "dark-sense",
+    "fortitude",
+    "flare",
+    "deep-breath",
+    "shadow-phantom"
+   ],
+   "kinds": [
+    "dark-sense",
+    "flare",
+    "deep-breath"
+   ]
+  },
+  {
+   "classId": "warlock",
+   "skills": [
+    "touch-of-agony",
+    "blood-curse",
+    "fire-offering",
+    "pain-overture",
+    "summon-hellfire",
+    "spell-redemption",
+    "hell-s-pawn",
+    "summon-bard",
+    "monster-s-scream",
+    "mage-s-claw",
+    "blood-revenge",
+    "bard-of-destruction",
+    "blade-of-darkness",
+    "blood-feast",
+    "lightning-of-hell"
+   ],
+   "kinds": [
+    "owner-mana-restore",
+    "blood-revenge",
+    "bard-of-destruction",
+    "lightning-of-hell"
+   ]
+  },
+  {
+   "classId": "priest",
+   "skills": [
+    "prayer-of-recovery",
+    "apostles-of-light",
+    "light-command",
+    "celestial-armor",
+    "blinding-flash",
+    "holy-sacrifice",
+    "divine-strike",
+    "hammer-of-wrath",
+    "celestial-lightning",
+    "healing-enhancement",
+    "ordination-prayer",
+    "magic-insight",
+    "shield-of-trust",
+    "divine-arms",
+    "god-of-justice"
+   ],
+   "kinds": [
+    "ordination-prayer",
+    "magic-insight",
+    "shield-of-trust",
+    "god-of-justice"
+   ]
+  },
+  {
+   "classId": "ranger",
+   "skills": [
+    "multiple-shot",
+    "aimed-shot",
+    "ambush",
+    "net-shackles",
+    "spiritual-arrow",
+    "rampage",
+    "beast-companion",
+    "spirit-of-nature",
+    "survival-instinct",
+    "clever-fellow",
+    "forest-knowledge",
+    "rear-penetration",
+    "disturbance",
+    "spiritual-affinity",
+    "sniping"
+   ],
+   "kinds": [
+    "clever-fellow",
+    "disturbance",
+    "sniping"
+   ]
+  },
+  {
+   "classId": "warrior",
+   "skills": [
+    "rush-of-anger",
+    "shouts-of-threat",
+    "armor-penetration",
+    "giant-blow",
+    "weapon-hitback",
+    "swirling-storm",
+    "blood-thirst",
+    "storm-of-frenzy",
+    "enrage",
+    "weapon-specializing",
+    "skin-of-steel",
+    "soul-s-thirst",
+    "revenge-incarnate",
+    "warrior-s-instinct",
+    "insanity-thrills"
+   ],
+   "kinds": [
+    "armor-penetration",
+    "blood-thirst",
+    "revenge-incarnate"
+   ]
+  }
+ ],
+ "reactionSkills": {
+  "soul-sword": {
+   "rank": 0,
+   "kinds": [
+    "soul-sword"
+   ]
+  },
+  "blood-sword": {
+   "rank": 0,
+   "kinds": [
+    "blood-sword"
+   ]
+  },
+  "shield-of-rage": {
+   "rank": 0,
+   "kinds": [
+    "shield-of-rage"
+   ]
+  },
+  "flares-of-pain": {
+   "rank": 0,
+   "kinds": [
+    "flares-of-pain"
+   ]
+  },
+  "wrath-of-darkness": {
+   "rank": 0,
+   "kinds": [
+    "wrath-of-darkness"
+   ]
+  },
+  "dark-sense": {
+   "rank": 0,
+   "kinds": [
+    "dark-sense"
+   ]
+  },
+  "flare": {
+   "rank": 0,
+   "kinds": [
+    "flare"
+   ]
+  },
+  "deep-breath": {
+   "rank": 0,
+   "kinds": [
+    "deep-breath"
+   ]
+  },
+  "mage-s-claw": {
+   "rank": 0,
+   "kinds": [
+    "owner-mana-restore"
+   ]
+  },
+  "blood-revenge": {
+   "rank": 0,
+   "kinds": [
+    "blood-revenge"
+   ]
+  },
+  "bard-of-destruction": {
+   "rank": 0,
+   "kinds": [
+    "bard-of-destruction"
+   ]
+  },
+  "lightning-of-hell": {
+   "rank": 0,
+   "kinds": [
+    "lightning-of-hell"
+   ]
+  },
+  "ordination-prayer": {
+   "rank": 0,
+   "kinds": [
+    "ordination-prayer"
+   ]
+  },
+  "magic-insight": {
+   "rank": 0,
+   "kinds": [
+    "magic-insight"
+   ]
+  },
+  "shield-of-trust": {
+   "rank": 0,
+   "kinds": [
+    "shield-of-trust"
+   ]
+  },
+  "god-of-justice": {
+   "rank": 0,
+   "kinds": [
+    "god-of-justice"
+   ]
+  },
+  "clever-fellow": {
+   "rank": 0,
+   "kinds": [
+    "clever-fellow"
+   ]
+  },
+  "disturbance": {
+   "rank": 0,
+   "kinds": [
+    "disturbance"
+   ]
+  },
+  "sniping": {
+   "rank": 0,
+   "kinds": [
+    "sniping"
+   ]
+  },
+  "armor-penetration": {
+   "rank": 0,
+   "kinds": [
+    "armor-penetration"
+   ]
+  },
+  "blood-thirst": {
+   "rank": 0,
+   "kinds": [
+    "blood-thirst"
+   ]
+  },
+  "revenge-incarnate": {
+   "rank": 0,
+   "kinds": [
+    "revenge-incarnate"
+   ]
+  }
+ },
+ "cases": [
+  {
+   "name": "攻击成立（物理）",
+   "skillId": "soul-sword",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "attack-success",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 120,
+    "otherLifeDrainPerThousand": 10
+   },
+   "commands": [
+    {
+     "kind": "restore-health",
+     "targetId": "owner",
+     "amount": 1
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "life-drain"
+    }
+   ]
+  },
+  {
+   "name": "攻击成立（魔法）",
+   "skillId": "soul-sword",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "attack-success",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "magic",
+    "outcome": "hit",
+    "hitDamage": 90,
+    "otherLifeDrainPerThousand": 0
+   },
+   "commands": []
+  },
+  {
+   "name": "攻击落空",
+   "skillId": "soul-sword",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "attack-success",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "miss",
+    "hitDamage": 0,
+    "otherLifeDrainPerThousand": 0
+   },
+   "commands": []
+  },
+  {
+   "name": "攻击成立但抽不中",
+   "skillId": "soul-sword",
+   "rank": 0,
+   "seed": 999,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "attack-success",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 120,
+    "otherLifeDrainPerThousand": 0
+   },
+   "commands": []
+  },
+  {
+   "name": "血之剑按千分率回血",
+   "skillId": "blood-sword",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "attack-success",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 200,
+    "otherLifeDrainPerThousand": 0
+   },
+   "commands": [
+    {
+     "kind": "restore-health",
+     "targetId": "owner",
+     "amount": 10
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "life-drain"
+    }
+   ]
+  },
+  {
+   "name": "破甲判定",
+   "skillId": "armor-penetration",
+   "rank": 0,
+   "seed": 77,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-attack-effects",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "armorBreakChance": 1000
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "armor-penetration"
+    }
+   ]
+  },
+  {
+   "name": "复仇判定",
+   "skillId": "revenge-incarnate",
+   "rank": 0,
+   "seed": 4242,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-revenge",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "chanceThreshold": 1000
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "revenge-incarnate"
+    }
+   ]
+  },
+  {
+   "name": "本能（单手）",
+   "skillId": "shield-of-rage",
+   "rank": 0,
+   "seed": 5,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-instinct",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "chanceThreshold": 300,
+    "mainHandTwoHanded": false
+   },
+   "commands": []
+  },
+  {
+   "name": "本能（双手 15/10）",
+   "skillId": "shield-of-rage",
+   "rank": 0,
+   "seed": 5,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-instinct",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "chanceThreshold": 300,
+    "mainHandTwoHanded": true
+   },
+   "commands": []
+  },
+  {
+   "name": "防御本能",
+   "skillId": "shield-of-rage",
+   "rank": 0,
+   "seed": 9,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-defense-instinct",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block",
+    "chanceThreshold": 500
+   },
+   "commands": [
+    {
+     "kind": "reset-skill-cooldowns",
+     "targetId": "owner"
+    }
+   ]
+  },
+  {
+   "name": "残影（主手）",
+   "skillId": "flare",
+   "rank": 0,
+   "seed": 32,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-flare",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hand": "main-hand"
+   },
+   "commands": []
+  },
+  {
+   "name": "残影（副手）",
+   "skillId": "flare",
+   "rank": 0,
+   "seed": 32,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-flare",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hand": "offhand"
+   },
+   "commands": []
+  },
+  {
+   "name": "残影（主手，没学过）",
+   "skillId": "flare",
+   "rank": 0,
+   "seed": 32,
+   "noLearnedBuff": true,
+   "event": {
+    "kind": "physical-flare",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hand": "main-hand"
+   },
+   "commands": []
+  },
+  {
+   "name": "嗜血",
+   "skillId": "blood-thirst",
+   "rank": 0,
+   "seed": 606,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "blood-thirst",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 150,
+    "chanceThreshold": 400
+   },
+   "commands": []
+  },
+  {
+   "name": "动作追加效果",
+   "skillId": "flares-of-pain",
+   "rank": 0,
+   "seed": 111,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "attack-effects",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "actionId": "firestorm",
+    "hasMoltenArmor": false
+   },
+   "commands": []
+  },
+  {
+   "name": "动作追加效果（无火焰风暴）",
+   "skillId": "flares-of-pain",
+   "rank": 0,
+   "seed": 111,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "attack-effects",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "actionId": "dark-strike",
+    "hasMoltenArmor": false
+   },
+   "commands": []
+  },
+  {
+   "name": "召唤物命中（主人回魔）",
+   "skillId": "mage-s-claw",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "summon-attack-success",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 1
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "name": "召唤物物理命中（机灵鬼）",
+   "skillId": "clever-fellow",
+   "rank": 0,
+   "seed": 888,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "summon-physical-success",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "name": "格挡",
+   "skillId": "shield-of-rage",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-block",
+    "ownerId": "owner"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "shield-of-rage"
+    }
+   ]
+  },
+  {
+   "name": "格挡（信念之盾）",
+   "skillId": "shield-of-trust",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-block",
+    "ownerId": "owner"
+   },
+   "commands": [
+    {
+     "kind": "apply-party-buff",
+     "sourceId": "owner",
+     "buffKey": "shield-of-trust"
+    }
+   ]
+  },
+  {
+   "name": "熔岩反伤完成",
+   "skillId": "flares-of-pain",
+   "rank": 0,
+   "seed": 24,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "molten-reflection-completed",
+    "ownerId": "owner",
+    "opponentId": "opponent"
+   },
+   "commands": []
+  },
+  {
+   "name": "隐身被打断",
+   "skillId": "dark-sense",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "action-stealth-break",
+    "ownerId": "owner"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "dark-sense"
+    }
+   ]
+  },
+  {
+   "name": "技能命中（魔法之眼）",
+   "skillId": "magic-insight",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "skill-attack-success",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "magic-insight"
+    }
+   ]
+  },
+  {
+   "name": "直接治疗被接受",
+   "skillId": "ordination-prayer",
+   "rank": 0,
+   "seed": 17,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "direct-heal-accepted",
+    "ownerId": "owner",
+    "targetId": "target"
+   },
+   "commands": []
+  },
+  {
+   "name": "挨了物理命中",
+   "skillId": "wrath-of-darkness",
+   "rank": 0,
+   "seed": 313,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "physical-hit-received",
+    "ownerId": "owner"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "wrath-of-darkness"
+    }
+   ]
+  },
+  {
+   "name": "同阵营挨打（血之复仇）",
+   "skillId": "blood-revenge",
+   "rank": 0,
+   "seed": 1234,
+   "noLearnedBuff": false,
+   "event": {
+    "kind": "blood-revenge",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "blood-revenge"
+    }
+   ]
+  }
+ ],
+ "bloodThirst": [
+  {
+   "hitDamage": 150,
+   "chanceThreshold": 400,
+   "seed": 606,
+   "lifeDrain": 250,
+   "mana": 12,
+   "commands": []
+  },
+  {
+   "hitDamage": 150,
+   "chanceThreshold": 120,
+   "seed": 606,
+   "lifeDrain": 250,
+   "mana": 12,
+   "commands": []
+  },
+  {
+   "hitDamage": 150,
+   "chanceThreshold": 400,
+   "seed": 606,
+   "lifeDrain": 0,
+   "mana": 0,
+   "commands": []
+  },
+  {
+   "hitDamage": 150,
+   "chanceThreshold": 400,
+   "seed": 606,
+   "lifeDrain": 250,
+   "mana": 0,
+   "commands": []
+  }
+ ],
+ "buffReactions": [
+  {
+   "buffId": "demon-s-shield#0@0",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "demon-s-shield#0@0",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@0",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "magic",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@1",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "demon-s-shield#0@1",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@1",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "magic",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@2",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "demon-s-shield#0@2",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@2",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "magic",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@3",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "demon-s-shield#0@3",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@3",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "magic",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@4",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "demon-s-shield#0@4",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@4",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "magic",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@5",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "demon-s-shield#0@5",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@5",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "magic",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@6",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "demon-s-shield#0@6",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@6",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "magic",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@7",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "owner",
+     "buffKey": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "demon-s-shield#0@7",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "demon-s-shield#0@7",
+   "reactionKind": "physical-avoidance",
+   "event": {
+    "kind": "physical-avoidance",
+    "ownerId": "owner",
+    "damageKind": "magic",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "spiritual-blade#0@0",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 4
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "spiritual-blade#0@0",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "spiritual-blade#0@1",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 4
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "spiritual-blade#0@1",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "spiritual-blade#0@2",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 4
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "spiritual-blade#0@2",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "spiritual-blade#0@3",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 4
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "spiritual-blade#0@3",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "spiritual-blade#0@4",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 4
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "spiritual-blade#0@4",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "spiritual-blade#0@5",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 4
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "spiritual-blade#0@5",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "spiritual-blade#0@6",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 4
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "spiritual-blade#0@6",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "spiritual-blade#0@7",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit"
+   },
+   "commands": [
+    {
+     "kind": "restore-mana",
+     "targetId": "owner",
+     "amount": 4
+    },
+    {
+     "kind": "play-effect",
+     "targetId": "owner",
+     "effect": "mana-recovery"
+    }
+   ]
+  },
+  {
+   "buffId": "spiritual-blade#0@7",
+   "reactionKind": "mana-on-physical-success",
+   "event": {
+    "kind": "physical-success",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "miss"
+   },
+   "commands": []
+  },
+  {
+   "buffId": "blade-deflection#0@0",
+   "reactionKind": "weapon-block-counter",
+   "event": {
+    "kind": "weapon-block-counter",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "blade-deflection-weaken"
+    }
+   ]
+  },
+  {
+   "buffId": "blade-deflection#0@1",
+   "reactionKind": "weapon-block-counter",
+   "event": {
+    "kind": "weapon-block-counter",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "blade-deflection-weaken"
+    }
+   ]
+  },
+  {
+   "buffId": "blade-deflection#0@2",
+   "reactionKind": "weapon-block-counter",
+   "event": {
+    "kind": "weapon-block-counter",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "blade-deflection-weaken"
+    }
+   ]
+  },
+  {
+   "buffId": "blade-deflection#0@3",
+   "reactionKind": "weapon-block-counter",
+   "event": {
+    "kind": "weapon-block-counter",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "blade-deflection-weaken"
+    }
+   ]
+  },
+  {
+   "buffId": "blade-deflection#0@4",
+   "reactionKind": "weapon-block-counter",
+   "event": {
+    "kind": "weapon-block-counter",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "blade-deflection-weaken"
+    }
+   ]
+  },
+  {
+   "buffId": "blade-deflection#0@5",
+   "reactionKind": "weapon-block-counter",
+   "event": {
+    "kind": "weapon-block-counter",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "blade-deflection-weaken"
+    }
+   ]
+  },
+  {
+   "buffId": "blade-deflection#0@6",
+   "reactionKind": "weapon-block-counter",
+   "event": {
+    "kind": "weapon-block-counter",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "blade-deflection-weaken"
+    }
+   ]
+  },
+  {
+   "buffId": "blade-deflection#0@7",
+   "reactionKind": "weapon-block-counter",
+   "event": {
+    "kind": "weapon-block-counter",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "buffKey": "blade-deflection-weaken"
+    }
+   ]
+  },
+  {
+   "buffId": "survival-instinct#0@0",
+   "reactionKind": "weapon-block-stun",
+   "event": {
+    "kind": "weapon-block-stun",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-state",
+     "attributeOwner": "owner",
+     "targetId": "opponent",
+     "state": "stun",
+     "durationAttribute": "weaponBlockCounterStunDuration"
+    }
+   ]
+  },
+  {
+   "buffId": "survival-instinct#0@1",
+   "reactionKind": "weapon-block-stun",
+   "event": {
+    "kind": "weapon-block-stun",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-state",
+     "attributeOwner": "owner",
+     "targetId": "opponent",
+     "state": "stun",
+     "durationAttribute": "weaponBlockCounterStunDuration"
+    }
+   ]
+  },
+  {
+   "buffId": "survival-instinct#0@2",
+   "reactionKind": "weapon-block-stun",
+   "event": {
+    "kind": "weapon-block-stun",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-state",
+     "attributeOwner": "owner",
+     "targetId": "opponent",
+     "state": "stun",
+     "durationAttribute": "weaponBlockCounterStunDuration"
+    }
+   ]
+  },
+  {
+   "buffId": "survival-instinct#0@3",
+   "reactionKind": "weapon-block-stun",
+   "event": {
+    "kind": "weapon-block-stun",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-state",
+     "attributeOwner": "owner",
+     "targetId": "opponent",
+     "state": "stun",
+     "durationAttribute": "weaponBlockCounterStunDuration"
+    }
+   ]
+  },
+  {
+   "buffId": "survival-instinct#0@4",
+   "reactionKind": "weapon-block-stun",
+   "event": {
+    "kind": "weapon-block-stun",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-state",
+     "attributeOwner": "owner",
+     "targetId": "opponent",
+     "state": "stun",
+     "durationAttribute": "weaponBlockCounterStunDuration"
+    }
+   ]
+  },
+  {
+   "buffId": "survival-instinct#0@5",
+   "reactionKind": "weapon-block-stun",
+   "event": {
+    "kind": "weapon-block-stun",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-state",
+     "attributeOwner": "owner",
+     "targetId": "opponent",
+     "state": "stun",
+     "durationAttribute": "weaponBlockCounterStunDuration"
+    }
+   ]
+  },
+  {
+   "buffId": "survival-instinct#0@6",
+   "reactionKind": "weapon-block-stun",
+   "event": {
+    "kind": "weapon-block-stun",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-state",
+     "attributeOwner": "owner",
+     "targetId": "opponent",
+     "state": "stun",
+     "durationAttribute": "weaponBlockCounterStunDuration"
+    }
+   ]
+  },
+  {
+   "buffId": "survival-instinct#0@7",
+   "reactionKind": "weapon-block-stun",
+   "event": {
+    "kind": "weapon-block-stun",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "weapon-block"
+   },
+   "commands": [
+    {
+     "kind": "apply-state",
+     "attributeOwner": "owner",
+     "targetId": "opponent",
+     "state": "stun",
+     "durationAttribute": "weaponBlockCounterStunDuration"
+    }
+   ]
+  },
+  {
+   "buffId": "shouts-of-threat#1@0",
+   "reactionKind": "physical-success-threat",
+   "event": {
+    "kind": "physical-success-threat",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 88
+   },
+   "commands": [
+    {
+     "kind": "redistribute-threat",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "damage": 88
+    }
+   ]
+  },
+  {
+   "buffId": "shouts-of-threat#1@1",
+   "reactionKind": "physical-success-threat",
+   "event": {
+    "kind": "physical-success-threat",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 88
+   },
+   "commands": [
+    {
+     "kind": "redistribute-threat",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "damage": 88
+    }
+   ]
+  },
+  {
+   "buffId": "shouts-of-threat#1@2",
+   "reactionKind": "physical-success-threat",
+   "event": {
+    "kind": "physical-success-threat",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 88
+   },
+   "commands": [
+    {
+     "kind": "redistribute-threat",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "damage": 88
+    }
+   ]
+  },
+  {
+   "buffId": "shouts-of-threat#1@3",
+   "reactionKind": "physical-success-threat",
+   "event": {
+    "kind": "physical-success-threat",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 88
+   },
+   "commands": [
+    {
+     "kind": "redistribute-threat",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "damage": 88
+    }
+   ]
+  },
+  {
+   "buffId": "shouts-of-threat#1@4",
+   "reactionKind": "physical-success-threat",
+   "event": {
+    "kind": "physical-success-threat",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 88
+   },
+   "commands": [
+    {
+     "kind": "redistribute-threat",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "damage": 88
+    }
+   ]
+  },
+  {
+   "buffId": "shouts-of-threat#1@5",
+   "reactionKind": "physical-success-threat",
+   "event": {
+    "kind": "physical-success-threat",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 88
+   },
+   "commands": [
+    {
+     "kind": "redistribute-threat",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "damage": 88
+    }
+   ]
+  },
+  {
+   "buffId": "shouts-of-threat#1@6",
+   "reactionKind": "physical-success-threat",
+   "event": {
+    "kind": "physical-success-threat",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 88
+   },
+   "commands": [
+    {
+     "kind": "redistribute-threat",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "damage": 88
+    }
+   ]
+  },
+  {
+   "buffId": "shouts-of-threat#1@7",
+   "reactionKind": "physical-success-threat",
+   "event": {
+    "kind": "physical-success-threat",
+    "ownerId": "owner",
+    "opponentId": "opponent",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "hitDamage": 88
+   },
+   "commands": [
+    {
+     "kind": "redistribute-threat",
+     "sourceId": "owner",
+     "targetId": "opponent",
+     "damage": 88
+    }
+   ]
+  },
+  {
+   "buffId": "storm-of-frenzy#0@0",
+   "reactionKind": "physical-success-party",
+   "event": {
+    "kind": "physical-success-party",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "partyIds": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "a",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "b",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "c",
+     "buffKey": "storm-of-frenzy-power"
+    }
+   ]
+  },
+  {
+   "buffId": "storm-of-frenzy#0@1",
+   "reactionKind": "physical-success-party",
+   "event": {
+    "kind": "physical-success-party",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "partyIds": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "a",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "b",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "c",
+     "buffKey": "storm-of-frenzy-power"
+    }
+   ]
+  },
+  {
+   "buffId": "storm-of-frenzy#0@2",
+   "reactionKind": "physical-success-party",
+   "event": {
+    "kind": "physical-success-party",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "partyIds": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "a",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "b",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "c",
+     "buffKey": "storm-of-frenzy-power"
+    }
+   ]
+  },
+  {
+   "buffId": "storm-of-frenzy#0@3",
+   "reactionKind": "physical-success-party",
+   "event": {
+    "kind": "physical-success-party",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "partyIds": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "a",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "b",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "c",
+     "buffKey": "storm-of-frenzy-power"
+    }
+   ]
+  },
+  {
+   "buffId": "storm-of-frenzy#0@4",
+   "reactionKind": "physical-success-party",
+   "event": {
+    "kind": "physical-success-party",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "partyIds": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "a",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "b",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "c",
+     "buffKey": "storm-of-frenzy-power"
+    }
+   ]
+  },
+  {
+   "buffId": "storm-of-frenzy#0@5",
+   "reactionKind": "physical-success-party",
+   "event": {
+    "kind": "physical-success-party",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "partyIds": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "a",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "b",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "c",
+     "buffKey": "storm-of-frenzy-power"
+    }
+   ]
+  },
+  {
+   "buffId": "storm-of-frenzy#0@6",
+   "reactionKind": "physical-success-party",
+   "event": {
+    "kind": "physical-success-party",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "partyIds": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "a",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "b",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "c",
+     "buffKey": "storm-of-frenzy-power"
+    }
+   ]
+  },
+  {
+   "buffId": "storm-of-frenzy#0@7",
+   "reactionKind": "physical-success-party",
+   "event": {
+    "kind": "physical-success-party",
+    "ownerId": "owner",
+    "damageKind": "physical",
+    "outcome": "hit",
+    "partyIds": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "commands": [
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "a",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "b",
+     "buffKey": "storm-of-frenzy-power"
+    },
+    {
+     "kind": "apply-buff",
+     "sourceId": "owner",
+     "targetId": "c",
+     "buffKey": "storm-of-frenzy-power"
+    }
+   ]
+  }
+ ]
+}

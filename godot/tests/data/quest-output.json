@@ -1,0 +1,296 @@
+{
+ "states": {
+  "A": {
+   "grafton-mission": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {
+     "objective": 0
+    }
+   },
+   "quest-3": {
+    "status": "completed",
+    "cycle": 0,
+    "completedCycles": 1,
+    "goals": {}
+   },
+   "quest-4": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {}
+   },
+   "quest-222": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {}
+   },
+   "quest-8": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {}
+   },
+   "quest-13": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {}
+   }
+  },
+  "B": {
+   "grafton-mission": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {
+     "objective": 0
+    }
+   },
+   "quest-3": {
+    "status": "completed",
+    "cycle": 0,
+    "completedCycles": 1,
+    "goals": {}
+   },
+   "quest-4": {
+    "status": "ready",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {}
+   },
+   "quest-222": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {}
+   },
+   "quest-8": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {}
+   },
+   "quest-13": {
+    "status": "active",
+    "cycle": 0,
+    "completedCycles": 0,
+    "goals": {}
+   }
+  }
+ },
+ "runs": {
+  "A": [
+   {
+    "id": "native-group-2",
+    "title": "刺杀格里普顿伯爵",
+    "kind": "main",
+    "ready": false,
+    "entries": [
+     {
+      "id": "grafton-mission",
+      "status": "active"
+     }
+    ],
+    "text": "黑暗骑士团团长$S卓拉德$B命令：$R刺杀格里普顿伯爵$B。&N沿着伯爵一伙的踪迹找到并杀死伯爵之后，回到卓拉德处复命吧。$R&N格里普顿伯爵: 0/1$B"
+   },
+   {
+    "id": "native-group-3",
+    "title": "黑暗教团的任务",
+    "kind": "main",
+    "ready": false,
+    "entries": [
+     {
+      "id": "quest-4",
+      "status": "active"
+     },
+     {
+      "id": "quest-3",
+      "status": "completed"
+     }
+    ],
+    "text": "已解决掉了越狱的罪犯。&N到卓拉德处复命吧。$R&N与卓拉德进行对话$B&N$G-----------------------------------------$B&N&C$G[完成]&N发现了黑暗教团的背叛者。&N处置背叛者吧。&C"
+   },
+   {
+    "id": "native-group-103",
+    "title": "消灭盗贼团",
+    "kind": "side",
+    "ready": false,
+    "entries": [
+     {
+      "id": "quest-222",
+      "status": "active"
+     }
+    ],
+    "text": "$R德普尼恩关口$B的$S贝勒塞士兵$B拜托你去干掉$R15名黑帽盗贼团$B的残余势力。$R&N黑帽盗贼: 0/15$B"
+   }
+  ],
+  "B": [
+   {
+    "id": "native-group-2",
+    "title": "刺杀格里普顿伯爵",
+    "kind": "main",
+    "ready": false,
+    "entries": [
+     {
+      "id": "grafton-mission",
+      "status": "active"
+     }
+    ],
+    "text": "黑暗骑士团团长$S卓拉德$B命令：$R刺杀格里普顿伯爵$B。&N沿着伯爵一伙的踪迹找到并杀死伯爵之后，回到卓拉德处复命吧。$R&N格里普顿伯爵: 0/1$B"
+   },
+   {
+    "id": "native-group-3",
+    "title": "黑暗教团的任务",
+    "kind": "main",
+    "ready": true,
+    "entries": [
+     {
+      "id": "quest-4",
+      "status": "ready"
+     },
+     {
+      "id": "quest-3",
+      "status": "completed"
+     }
+    ],
+    "text": "已解决掉了越狱的罪犯。&N到卓拉德处复命吧。$S&N与卓拉德进行对话$B&N$G-----------------------------------------$B&N&C$G[完成]&N发现了黑暗教团的背叛者。&N处置背叛者吧。&C"
+   },
+   {
+    "id": "native-group-103",
+    "title": "消灭盗贼团",
+    "kind": "side",
+    "ready": false,
+    "entries": [
+     {
+      "id": "quest-222",
+      "status": "active"
+     }
+    ],
+    "text": "$R德普尼恩关口$B的$S贝勒塞士兵$B拜托你去干掉$R15名黑帽盗贼团$B的残余势力。$R&N黑帽盗贼: 0/15$B"
+   }
+  ]
+ },
+ "textLayout": [
+  {
+   "value": "黑暗骑士团团长$S卓拉德$B命令：$R刺杀格里普顿伯爵$B。&N沿着伯爵一伙的踪迹找到他。",
+   "parts": [
+    "base|黑暗骑士团团长",
+    "person|卓拉德",
+    "base|命令：",
+    "target|刺杀格里普顿伯爵",
+    "base|。",
+    "BREAK",
+    "base|沿着伯爵一伙的踪迹找到他。"
+   ],
+   "lines": [
+    {
+     "width": 100,
+     "runs": [
+      "base|0|黑暗骑士团团长",
+      "person|70|卓拉德"
+     ]
+    },
+    {
+     "width": 100,
+     "runs": [
+      "base|0|命令：",
+      "target|30|刺杀格里普顿伯"
+     ]
+    },
+    {
+     "width": 20,
+     "runs": [
+      "target|0|爵",
+      "base|10|。"
+     ]
+    },
+    {
+     "width": 100,
+     "runs": [
+      "base|0|沿着伯爵一伙的踪迹找"
+     ]
+    },
+    {
+     "width": 30,
+     "runs": [
+      "base|0|到他。"
+     ]
+    }
+   ]
+  },
+  {
+   "value": "$G[完成]&N黑暗骑士团团长$S卓拉德$B命令：$R刺杀格里普顿伯爵$B。&C",
+   "parts": [
+    "muted|[完成]",
+    "BREAK",
+    "muted|黑暗骑士团团长",
+    "person|卓拉德",
+    "base|命令：",
+    "target|刺杀格里普顿伯爵",
+    "base|。"
+   ],
+   "lines": [
+    {
+     "width": 40,
+     "runs": [
+      "muted|0|[完成]"
+     ]
+    },
+    {
+     "width": 100,
+     "runs": [
+      "muted|0|黑暗骑士团团长",
+      "person|70|卓拉德"
+     ]
+    },
+    {
+     "width": 100,
+     "runs": [
+      "base|0|命令：",
+      "target|30|刺杀格里普顿伯"
+     ]
+    },
+    {
+     "width": 20,
+     "runs": [
+      "target|0|爵",
+      "base|10|。"
+     ]
+    }
+   ]
+  },
+  {
+   "value": "先开始（这个括号不留行尾）结尾，测试。&N第二段$G灰色补一句&B",
+   "parts": [
+    "base|先开始（这个括号不留行尾）结尾，测试。",
+    "BREAK",
+    "base|第二段",
+    "muted|灰色补一句&B"
+   ],
+   "lines": [
+    {
+     "width": 100,
+     "runs": [
+      "base|0|先开始（这个括号不留"
+     ]
+    },
+    {
+     "width": 90,
+     "runs": [
+      "base|0|行尾）结尾，测试。"
+     ]
+    },
+    {
+     "width": 100,
+     "runs": [
+      "base|0|第二段",
+      "muted|30|灰色补一句&B"
+     ]
+    }
+   ]
+  }
+ ]
+}

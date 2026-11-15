@@ -1,0 +1,20 @@
+﻿<Project Sdk="Godot.NET.Sdk/4.5.1">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+    <RootNamespace>Inotia4</RootNamespace>
+    <AssemblyName>Inotia4</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- domain 与 tests 各自是独立工程，主程序集只编译引擎层。 -->
+    <Compile Remove="domain/**/*.cs" />
+    <Compile Remove="tests/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="domain/Inotia4.Domain.csproj" />
+  </ItemGroup>
+</Project>

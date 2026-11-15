@@ -1,0 +1,7 @@
+# Godot 构建产物与编辑器缓存
+.godot/
+bin/
+obj/
+.shots/
+*.user
+*.sln

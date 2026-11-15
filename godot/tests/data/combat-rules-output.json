@@ -1,0 +1,1368 @@
+{
+ "splashSelect": {
+  "source": {
+   "id": "caster",
+   "team": "player",
+   "position": {
+    "x": 100,
+    "y": 100
+   },
+   "bounds": {
+    "x": -8,
+    "y": -8,
+    "width": 16,
+    "height": 16
+   },
+   "facing": "east"
+  },
+  "pool": [
+   {
+    "id": "near",
+    "team": "enemy",
+    "position": {
+     "x": 120,
+     "y": 100
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "far",
+    "team": "enemy",
+    "position": {
+     "x": 300,
+     "y": 300
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "ally",
+    "team": "player",
+    "position": {
+     "x": 110,
+     "y": 100
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "hidden",
+    "team": "enemy",
+    "position": {
+     "x": 112,
+     "y": 100
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south",
+    "states": [
+     "stealthed"
+    ]
+   }
+  ],
+  "rangeUnits": 3,
+  "cases": [
+   {
+    "options": {},
+    "center": {
+     "x": 120,
+     "y": 100
+    },
+    "targetId": "near",
+    "consumedGaze": false
+   },
+   {
+    "options": {
+     "currentTargetId": "near"
+    },
+    "center": {
+     "x": 120,
+     "y": 100
+    },
+    "targetId": "near",
+    "consumedGaze": false
+   },
+   {
+    "options": {
+     "currentTargetId": "far"
+    },
+    "center": {
+     "x": 100,
+     "y": 100
+    },
+    "targetId": null,
+    "consumedGaze": false
+   },
+   {
+    "options": {
+     "currentTargetId": "far",
+     "retainCurrentTarget": true,
+     "gazeTargetId": "near"
+    },
+    "center": {
+     "x": 100,
+     "y": 100
+    },
+    "targetId": null,
+    "consumedGaze": false
+   },
+   {
+    "options": {
+     "gazeTargetId": "near"
+    },
+    "center": {
+     "x": 120,
+     "y": 100
+    },
+    "targetId": "near",
+    "consumedGaze": true
+   },
+   {
+    "options": {
+     "currentTargetId": "ally"
+    },
+    "center": {
+     "x": 110,
+     "y": 100
+    },
+    "targetId": "ally",
+    "consumedGaze": false
+   }
+  ]
+ },
+ "splashTargets": {
+  "source": {
+   "id": "caster",
+   "team": "player",
+   "position": {
+    "x": 0,
+    "y": 0
+   },
+   "bounds": {
+    "x": -8,
+    "y": -8,
+    "width": 16,
+    "height": 16
+   },
+   "facing": "south"
+  },
+  "pool": [
+   {
+    "id": "enemy-0",
+    "team": "enemy",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-1",
+    "team": "enemy",
+    "position": {
+     "x": 8,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-2",
+    "team": "enemy",
+    "position": {
+     "x": 16,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-3",
+    "team": "enemy",
+    "position": {
+     "x": 24,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-4",
+    "team": "enemy",
+    "position": {
+     "x": 32,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-5",
+    "team": "enemy",
+    "position": {
+     "x": 40,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-6",
+    "team": "enemy",
+    "position": {
+     "x": 48,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-7",
+    "team": "enemy",
+    "position": {
+     "x": 56,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-8",
+    "team": "enemy",
+    "position": {
+     "x": 64,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-9",
+    "team": "enemy",
+    "position": {
+     "x": 72,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-10",
+    "team": "enemy",
+    "position": {
+     "x": 80,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-11",
+    "team": "enemy",
+    "position": {
+     "x": 88,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-12",
+    "team": "enemy",
+    "position": {
+     "x": 96,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-13",
+    "team": "enemy",
+    "position": {
+     "x": 104,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-14",
+    "team": "enemy",
+    "position": {
+     "x": 112,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-15",
+    "team": "enemy",
+    "position": {
+     "x": 120,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-16",
+    "team": "enemy",
+    "position": {
+     "x": 128,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-17",
+    "team": "enemy",
+    "position": {
+     "x": 136,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-18",
+    "team": "enemy",
+    "position": {
+     "x": 144,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-19",
+    "team": "enemy",
+    "position": {
+     "x": 152,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "ally",
+    "team": "player",
+    "position": {
+     "x": 8,
+     "y": 0
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   }
+  ],
+  "center": {
+   "x": 0,
+   "y": 0
+  },
+  "rangeUnits": 6,
+  "targets": [
+   "enemy-0",
+   "enemy-1",
+   "enemy-2",
+   "enemy-3",
+   "enemy-4",
+   "enemy-5",
+   "enemy-6"
+  ]
+ },
+ "healScore": {
+  "cases": [
+   {
+    "health": 0,
+    "maxHealth": 100,
+    "dealt": false,
+    "score": 0
+   },
+   {
+    "health": 0,
+    "maxHealth": 100,
+    "dealt": true,
+    "score": 0
+   },
+   {
+    "health": 37,
+    "maxHealth": 100,
+    "dealt": false,
+    "score": 37
+   },
+   {
+    "health": 37,
+    "maxHealth": 100,
+    "dealt": true,
+    "score": 48
+   },
+   {
+    "health": 100,
+    "maxHealth": 100,
+    "dealt": true,
+    "score": 130
+   },
+   {
+    "health": 50,
+    "maxHealth": 0,
+    "dealt": false,
+    "score": 0
+   }
+  ]
+ },
+ "healSelect": {
+  "caster": {
+   "id": "caster",
+   "team": "player",
+   "position": {
+    "x": 0,
+    "y": 0
+   },
+   "bounds": {
+    "x": -8,
+    "y": -8,
+    "width": 16,
+    "height": 16
+   },
+   "facing": "south"
+  },
+  "slots": [
+   {
+    "actor": {
+     "id": "self",
+     "team": "player",
+     "position": {
+      "x": 0,
+      "y": 0
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true,
+    "score": 80
+   },
+   {
+    "actor": {
+     "id": "ally-near",
+     "team": "player",
+     "position": {
+      "x": 8,
+      "y": 0
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true,
+    "score": 40
+   },
+   {
+    "actor": {
+     "id": "ally-far",
+     "team": "player",
+     "position": {
+      "x": 400,
+      "y": 0
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true,
+    "score": 10
+   },
+   {
+    "actor": {
+     "id": "ally-dead",
+     "team": "player",
+     "position": {
+      "x": 8,
+      "y": 8
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": false,
+    "hasDisplay": true,
+    "score": 1
+   },
+   {
+    "actor": {
+     "id": "enemy",
+     "team": "enemy",
+     "position": {
+      "x": 8,
+      "y": 8
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true,
+    "score": 1
+   },
+   {
+    "actor": {
+     "id": "no-display",
+     "team": "player",
+     "position": {
+      "x": 8,
+      "y": 8
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": false,
+    "score": 1
+   },
+   {
+    "actor": {
+     "id": "no-score",
+     "team": "player",
+     "position": {
+      "x": 8,
+      "y": 8
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true
+   }
+  ],
+  "rangeUnits": 5,
+  "target": "ally-near"
+ },
+ "partyBuff": {
+  "slots": [
+   {
+    "actor": {
+     "id": "self",
+     "team": "player",
+     "position": {
+      "x": 0,
+      "y": 0
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true
+   },
+   {
+    "actor": {
+     "id": "mate",
+     "team": "player",
+     "position": {
+      "x": 16,
+      "y": 0
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true
+   },
+   {
+    "actor": {
+     "id": "far",
+     "team": "player",
+     "position": {
+      "x": 400,
+      "y": 0
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true
+   },
+   {
+    "actor": {
+     "id": "fourth",
+     "team": "player",
+     "position": {
+      "x": 8,
+      "y": 0
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true
+   }
+  ],
+  "cases": [
+   {
+    "rangeUnits": 0,
+    "targets": [
+     "self",
+     "mate",
+     "far"
+    ]
+   },
+   {
+    "rangeUnits": 2,
+    "targets": [
+     "self",
+     "mate"
+    ]
+   },
+   {
+    "rangeUnits": 1,
+    "targets": [
+     "self"
+    ]
+   }
+  ],
+  "caster": {
+   "id": "caster",
+   "team": "player",
+   "position": {
+    "x": 0,
+    "y": 0
+   },
+   "bounds": {
+    "x": -8,
+    "y": -8,
+    "width": 16,
+    "height": 16
+   },
+   "facing": "south"
+  }
+ },
+ "charge": {
+  "charge": {
+   "arrivalFrame": 6,
+   "closeDistanceUnits": 2,
+   "lungeDistancePx": 24,
+   "stoppingDistanceUnits": 2,
+   "gridSizePx": 8
+  },
+  "cases": [
+   {
+    "name": "贴身",
+    "caster": {
+     "x": 0,
+     "y": 0
+    },
+    "target": {
+     "x": 16,
+     "y": 0
+    },
+    "blocked": [],
+    "destination": {
+     "x": 0,
+     "y": 0
+    },
+    "close": true
+   },
+   {
+    "name": "一格之外",
+    "caster": {
+     "x": 0,
+     "y": 0
+    },
+    "target": {
+     "x": 64,
+     "y": 0
+    },
+    "blocked": [],
+    "destination": {
+     "x": 48,
+     "y": 0
+    },
+    "close": false
+   },
+   {
+    "name": "绕不过去的墙",
+    "caster": {
+     "x": 0,
+     "y": 0
+    },
+    "target": {
+     "x": 64,
+     "y": 0
+    },
+    "blocked": [
+     "8,0",
+     "8,8",
+     "8,-8",
+     "16,0",
+     "16,8",
+     "16,-8",
+     "24,0",
+     "24,8",
+     "24,-8",
+     "32,0",
+     "32,8",
+     "32,-8",
+     "40,0",
+     "40,8",
+     "40,-8",
+     "48,0",
+     "48,8",
+     "48,-8",
+     "56,0",
+     "56,8",
+     "56,-8",
+     "64,8",
+     "64,-8"
+    ],
+    "destination": {
+     "x": 64,
+     "y": -16
+    },
+    "close": false
+   }
+  ]
+ },
+ "rearTeleport": {
+  "cases": [
+   {
+    "name": "目标朝南，去他背后",
+    "caster": {
+     "x": 0,
+     "y": 0
+    },
+    "target": {
+     "x": 0,
+     "y": 0
+    },
+    "facing": "south",
+    "blocked": [],
+    "bounds": null,
+    "spot": {
+     "x": 0,
+     "y": -24
+    }
+   },
+   {
+    "name": "目标朝北，去他背后",
+    "caster": {
+     "x": 0,
+     "y": 0
+    },
+    "target": {
+     "x": 0,
+     "y": 0
+    },
+    "facing": "north",
+    "blocked": [],
+    "bounds": null,
+    "spot": {
+     "x": 0,
+     "y": 24
+    }
+   },
+   {
+    "name": "目标朝东，背后被墙挡住",
+    "caster": {
+     "x": 0,
+     "y": 0
+    },
+    "target": {
+     "x": 0,
+     "y": 0
+    },
+    "facing": "east",
+    "blocked": [
+     "-8,0"
+    ],
+    "bounds": null,
+    "spot": {
+     "x": 0,
+     "y": -24
+    }
+   },
+   {
+    "name": "有地图边界",
+    "caster": {
+     "x": 0,
+     "y": 0
+    },
+    "target": {
+     "x": 0,
+     "y": 0
+    },
+    "facing": "west",
+    "blocked": [],
+    "bounds": {
+     "x": 0,
+     "y": 0,
+     "width": 64,
+     "height": 64
+    },
+    "spot": {
+     "x": 24,
+     "y": 0
+    }
+   },
+   {
+    "name": "没有朝向",
+    "caster": {
+     "x": 0,
+     "y": 0
+    },
+    "target": {
+     "x": 0,
+     "y": 0
+    },
+    "blocked": [],
+    "bounds": null,
+    "spot": {
+     "x": 0,
+     "y": -24
+    }
+   }
+  ]
+ },
+ "arithmetic": {
+  "drain": [
+   {
+    "amount": 120,
+    "targetMana": 50,
+    "casterMana": 10,
+    "maxMana": 100,
+    "targetManaAfter": 0,
+    "casterManaAfter": 100,
+    "deducted": 50
+   },
+   {
+    "amount": 120,
+    "targetMana": 0,
+    "casterMana": 10,
+    "maxMana": 100,
+    "targetManaAfter": 0,
+    "casterManaAfter": 100,
+    "deducted": 0
+   },
+   {
+    "amount": -5,
+    "targetMana": 50,
+    "casterMana": 10,
+    "maxMana": 100,
+    "targetManaAfter": 50,
+    "casterManaAfter": 10,
+    "deducted": 0
+   },
+   {
+    "amount": 30,
+    "targetMana": 50,
+    "casterMana": 95,
+    "maxMana": 100,
+    "targetManaAfter": 20,
+    "casterManaAfter": 100,
+    "deducted": 30
+   },
+   {
+    "amount": 30,
+    "targetMana": 50,
+    "casterMana": 10,
+    "maxMana": 100,
+    "targetManaAfter": 20,
+    "casterManaAfter": 40,
+    "deducted": 30
+   }
+  ],
+  "healing": [
+   {
+    "rate": 0,
+    "amount": 37
+   },
+   {
+    "rate": 500,
+    "amount": 18
+   },
+   {
+    "rate": 1000,
+    "amount": 37
+   },
+   {
+    "rate": 1250,
+    "amount": 46
+   },
+   {
+    "rate": 2500,
+    "amount": 92
+   },
+   {
+    "rate": -100,
+    "amount": 37
+   }
+  ],
+  "cycle": [
+   {
+    "base": 30,
+    "rate": 1000,
+    "strike": 10,
+    "frames": 30
+   },
+   {
+    "base": 30,
+    "rate": 500,
+    "strike": 10,
+    "frames": 45
+   },
+   {
+    "base": 30,
+    "rate": 2000,
+    "strike": 10,
+    "frames": 11
+   },
+   {
+    "base": 30,
+    "rate": 1000,
+    "strike": 40,
+    "frames": 41
+   },
+   {
+    "base": 12,
+    "rate": 1500,
+    "strike": 10,
+    "frames": 11
+   }
+  ]
+ },
+ "cueTargets": {
+  "caster": {
+   "id": "caster",
+   "team": "player",
+   "position": {
+    "x": 100,
+    "y": 100
+   },
+   "bounds": {
+    "x": -8,
+    "y": -8,
+    "width": 16,
+    "height": 16
+   },
+   "facing": "south"
+  },
+  "pool": [
+   {
+    "id": "enemy-near",
+    "team": "enemy",
+    "position": {
+     "x": 120,
+     "y": 100
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-far",
+    "team": "enemy",
+    "position": {
+     "x": 400,
+     "y": 400
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "enemy-hidden",
+    "team": "enemy",
+    "position": {
+     "x": 112,
+     "y": 100
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south",
+    "states": [
+     "stealthed"
+    ]
+   },
+   {
+    "id": "ally-near",
+    "team": "player",
+    "position": {
+     "x": 108,
+     "y": 100
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   },
+   {
+    "id": "ally-far",
+    "team": "player",
+    "position": {
+     "x": 400,
+     "y": 100
+    },
+    "bounds": {
+     "x": -8,
+     "y": -8,
+     "width": 16,
+     "height": 16
+    },
+    "facing": "south"
+   }
+  ],
+  "slots": [
+   {
+    "actor": {
+     "id": "self",
+     "team": "player",
+     "position": {
+      "x": 100,
+      "y": 100
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true
+   },
+   {
+    "actor": {
+     "id": "ally-near",
+     "team": "player",
+     "position": {
+      "x": 108,
+      "y": 100
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true
+   },
+   {
+    "actor": {
+     "id": "ally-far",
+     "team": "player",
+     "position": {
+      "x": 400,
+      "y": 100
+     },
+     "bounds": {
+      "x": -8,
+      "y": -8,
+      "width": 16,
+      "height": 16
+     },
+     "facing": "south"
+    },
+    "active": true,
+    "hasDisplay": true
+   }
+  ],
+  "cases": [
+   {
+    "target": "self",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": [
+     "caster"
+    ]
+   },
+   {
+    "target": "none",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": []
+   },
+   {
+    "target": "party",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": [
+     "self",
+     "ally-near"
+    ]
+   },
+   {
+    "target": "party-ally",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": [
+     "self",
+     "ally-near"
+    ]
+   },
+   {
+    "target": "ally-heal",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": [
+     "ally-near"
+    ]
+   },
+   {
+    "target": "current",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": [
+     "enemy-near"
+    ]
+   },
+   {
+    "target": "enemy",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": [
+     "enemy-near"
+    ]
+   },
+   {
+    "target": "ally",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": [
+     "ally-near"
+    ]
+   },
+   {
+    "target": "target-area",
+    "range": 64,
+    "metric": null,
+    "selected": "enemy-near",
+    "targets": [
+     "enemy-near"
+    ]
+   },
+   {
+    "target": "enemy",
+    "range": 64,
+    "metric": "octagonal-grid",
+    "selected": "enemy-near",
+    "targets": [
+     "enemy-near"
+    ]
+   },
+   {
+    "target": "enemy",
+    "range": 16,
+    "metric": null,
+    "rangeBonus": 2,
+    "selected": null,
+    "targets": []
+   }
+  ]
+ }
+}

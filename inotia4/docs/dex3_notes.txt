@@ -1,0 +1,5 @@
+[280]
+修改作者:Noname (BiliName:DminMulti)，公布时间:2025.01.04，纯属免费分享，切勿用于盈利。<Tools:(Android) AIDE, (bin) MT Files Manager, (Windows) IDA Pro, (Android) Shizuku, (Android) VMOS Pro, (Android) 7723 GameBox, (Android) Little File Explorer, 非常感谢以上工具。
+
+[281]
+相信看到这段话时，你正想要了解如何解决 艾诺迪亚4 较旧版本如何在较高版本的安卓中运行。现在我解说一下思路: 主要问题在于两处，我遇到的第一个问题是Native层报错，在此前我打算删除Dex中的某些类，我不确定是不是我此前的修改造成的，但修改了它之后游戏仍然可以运行，这个就是Native层(so)的函数 getDataFromWebDirectly，再次强调，或许是因为我删除了Dex里某些东西导致它有问题，但是在出现它之后我删除了对它的具体调用(直接return)，并无异常问题。第二，问题在于新版本SDK对app data目录的加固，导致游戏读取资源的某些东西不能被正常获取，所以报错(直接问题是提示gltex绘制为空指针)，因此如果给它传其他的app data路径而使用旧版安卓特性的文件树，这样就能正常读写资源了。至于为什么改包名，应该是包名太长了，我添加的文件树本来包括了包名，这样就导致绝对路径非常长，而应该是Native层没有考虑这个问题，所以可能会溢出而报错，报错应该和初始错误一样，都是资源加载失败。

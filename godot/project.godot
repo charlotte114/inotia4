@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="inoita4"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.5", "C#", "Forward Plus")
+config/icon="res://icon.png"
+; 安卓返回键交给游戏自己处理：留默认的 true 会让返回键直接把进程结束，
+; 战斗中途退出、自动存档来不及 flush。游戏侧在 WorldScene.HandleBackRequest 里接。
+config/quit_on_go_back=false
+; 不显示引擎的启动标志动画：进游戏自己的加载页之前不该先播一段 Godot logo。
+; show_image=false 只留纯色底（下面那行），minimum_display_time=0 不额外停留。
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/minimum_display_time=0
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=640
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="Inotia4"
+
+[physics]
+
+common/physics_jitter_fix=0.0
+common/physics_interpolation=true
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.043, 0.055, 0.067, 1)
