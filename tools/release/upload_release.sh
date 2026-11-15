@@ -18,6 +18,8 @@ REPO="${REPO:-charlotte114/inotia4}"
 TAG="${TAG:-v0.1.0}"
 BRANCH="${BRANCH:-main}"
 APK="${APK:-D:/Desktop/inoita4/godot/build/inoita4.apk}"
+# 原版基线包（对照用）。不想传就 ORIGINAL_APK= 跑。
+ORIGINAL_APK="${ORIGINAL_APK-D:/Desktop/inoita4/inotia4/艾诺迪亚4_1.2.9_cat.apk}"
 NOTES="${NOTES:-$(dirname "$0")/$TAG.md}"
 ASSET_NAME="$(basename "$APK")"
 RELEASE_TITLE="${RELEASE_TITLE:-$TAG — 首个能在手机上玩的版本}"
@@ -78,29 +80,45 @@ else
   cat "$TMP/get.json"; die "查询 Release 失败（HTTP $HTTP）"
 fi
 
-# ---------- 同名附件先删掉，避免 422 ----------
-step "检查同名附件"
-curl -s -o "$TMP/assets.json" "${AUTH[@]}" "$API/releases/$REL_ID/assets"
-OLD_ID=$(tr '{' '\n' < "$TMP/assets.json" | grep -F "\"name\":\"$ASSET_NAME\"" | grep -o '"id":[0-9]*' | head -1 | cut -d: -f2 || true)
-if [ -n "${OLD_ID:-}" ]; then
-  echo "附件 $ASSET_NAME 已存在（#$OLD_ID），先删掉再传"
-  curl -s -X DELETE -o /dev/null -w '删除返回 HTTP %{http_code}\n' "${AUTH[@]}" "$API/assets/$OLD_ID"
-fi
+# ---------- 上传一个附件 ----------
+upload_one() {
+  local file="$1" name size old_id http
+  name="$(basename "$file")"
+  size=$(wc -c < "$file" | tr -d ' ')
 
-# ---------- 上传 ----------
-step "上传 $ASSET_NAME（$(awk "BEGIN{printf \"%.1f\", $APK_SIZE/1048576}") MB，别中途断网）"
-HTTP=$(curl -# -X POST -o "$TMP/up.json" -w '%{http_code}' "${AUTH[@]}" \
-  -H "Content-Type: application/vnd.android.package-archive" \
-  --data-binary "@$APK" "$UPLOADS/releases/$REL_ID/assets?name=$ASSET_NAME" || echo 000)
-[ "$HTTP" = "201" ] || { cat "$TMP/up.json" 2>/dev/null; die "上传失败（HTTP $HTTP）"; }
+  step "检查同名附件 $name"
+  curl -s -o "$TMP/assets.json" "${AUTH[@]}" "$API/releases/$REL_ID/assets"
+  old_id=$(tr '{' '\n' < "$TMP/assets.json" | grep -F "\"name\":\"$name\"" | grep -o '"id":[0-9]*' | head -1 | cut -d: -f2 || true)
+  if [ -n "${old_id:-}" ]; then
+    echo "已存在（#$old_id），先删掉再传"
+    curl -s -X DELETE -o /dev/null -w '删除返回 HTTP %{http_code}\n' "${AUTH[@]}" "$API/assets/$old_id"
+  fi
 
-# ---------- 核对服务端大小 ----------
-step "核对服务端记录的大小"
-curl -s -o "$TMP/final.json" "${AUTH[@]}" "$API/releases/$REL_ID/assets"
-SERVER_SIZE=$(tr '{' '\n' < "$TMP/final.json" | grep -F "\"name\":\"$ASSET_NAME\"" | grep -o '"size":[0-9]*' | head -1 | cut -d: -f2 || true)
-URL=$(grep -o 'https://github.com/[^"]*releases/download/[^"]*' "$TMP/final.json" | head -1 || true)
+  step "上传 $name（$(awk "BEGIN{printf \"%.1f\", $size/1048576}") MB，别中途断网）"
+  http=$(curl -# -X POST -o "$TMP/up.json" -w '%{http_code}' "${AUTH[@]}" \
+    -H "Content-Type: application/vnd.android.package-archive" \
+    --data-binary "@$file" "$UPLOADS/releases/$REL_ID/assets?name=$name" || echo 000)
+  [ "$http" = "201" ] || { cat "$TMP/up.json" 2>/dev/null; die "$name 上传失败（HTTP $http）"; }
 
-printf '\n本地 %s 字节 / 服务端 %s 字节\n' "$APK_SIZE" "${SERVER_SIZE:-未知}"
-[ "${SERVER_SIZE:-0}" = "$APK_SIZE" ] || die "大小对不上，附件可能没传完，请重跑一次。"
+  step "核对 $name 在服务端记录的大小"
+  curl -s -o "$TMP/final.json" "${AUTH[@]}" "$API/releases/$REL_ID/assets"
+  local server
+  server=$(tr '{' '\n' < "$TMP/final.json" | grep -F "\"name\":\"$name\"" | grep -o '"size":[0-9]*' | head -1 | cut -d: -f2 || true)
+  printf '本地 %s 字节 / 服务端 %s 字节\n' "$size" "${server:-未知}"
+  [ "${server:-0}" = "$size" ] || die "$name 大小对不上，附件可能没传完，请重跑一次。"
+}
+
+# ---------- 依次上传：重写版 + 额外文件 ----------
+ALL_ASSETS="$APK"
+[ -n "${ORIGINAL_APK:-}" ] && ALL_ASSETS="$ALL_ASSETS
+$ORIGINAL_APK"
+
+while IFS= read -r f; do
+  [ -n "$f" ] || continue
+  [ -f "$f" ] || die "找不到要上传的文件：$f"
+  upload_one "$f"
+done <<EOF
+$ALL_ASSETS
+EOF
+
 printf '\n完成。Release 页面：https://github.com/%s/releases/tag/%s\n' "$REPO" "$TAG"
-[ -n "$URL" ] && printf '下载直链：%s\n' "$URL"
